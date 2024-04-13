@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const calculateButton = document.getElementById("calculateButton");
   const resultElement = document.getElementById("result");
@@ -43,8 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const alertDiv = document.createElement("div");
     alertDiv.classList.add("alert", `alert-${type}`, "mt-3");
     alertDiv.setAttribute("role", "alert");
+    alertDiv.style.width = "635px";
     alertDiv.textContent = message;
-    resultElement.innerHTML = '';
+    resultElement.innerHTML = "";
     resultElement.appendChild(alertDiv);
   }
 });
